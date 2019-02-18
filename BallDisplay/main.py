@@ -105,7 +105,7 @@ def main():
                 
             if event.type == KEYUP:
                 if event.key == pygame.K_SPACE and canNext != True:
-                    balls.append(ball(surface, imgCol[currentImg]))
+                    balls.append(ball(surface, imgCol[currentImg], 1))
                     total += 1
                     totalScore.textList[0].changeText(('Total: ' + str(total)))
                 if event.key == pygame.K_BACKSPACE and len(balls) > 0 and canNext != True:
